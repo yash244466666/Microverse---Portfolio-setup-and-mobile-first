@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style-type: none;
 }
 
 .nav-bar {
@@ -39,7 +41,7 @@
   background-color: #1c1a19;
   background-image: url(res/Illustration.svg);
   background-repeat: no-repeat;
-  background-position: right top 12em;
+  background-position: right top 14em;
   background-size: 7.5em 25em;
   color: #fff;
 }
@@ -85,4 +87,228 @@
 
 .social-ico {
   padding-left: 1em;
+}
+
+.works-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-recent-work {
+  padding: 7.5em 0 0 0;
+}
+
+.my-recent-work h1 {
+  padding: 0 0 1.7em 0;
+  margin: 0 auto 0 auto;
+  align-items: center;
+  font-family: 'Crete Round', serif;
+  font-size: 2.7rem;
+  font-weight: regular;
+  color: #1c1a19;
+}
+
+.recent-hr {
+  width: 90vw;
+  margin: 0 auto 5em auto;
+  border-top: 1px solid #212121;
+  height: 0;
+}
+
+.works {
+  display: grid;
+}
+
+.project-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 0 0;
+}
+
+.project-1-img {
+  align-self: center;
+}
+
+.project-1 h3 {
+  font-family: 'Crete Round', serif;
+  font-size: 2rem;
+  margin-top: 1.5em;
+  padding: 0 0 0 0.75em;
+  color: #091e42;
+  align-self: start;
+}
+
+.project-1 p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  padding: 0 1em 1.5em 1.5em;
+}
+
+.siklls {
+  align-self: start;
+  padding: 0 0 1em 1.5em;
+}
+
+.siklls a {
+  border: 1px solid #8993a4;
+  padding: 0.5em;
+  margin-top: 3em;
+  align-self: start;
+  cursor: pointer;
+}
+
+.project1-btn {
+  background-color: #ff6b00;
+  border: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  margin: 0.3em 0 0 1.8em;
+  align-self: start;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.project-2 {
+  margin: 1.5rem 0 5rem 0;
+  background-image: url(res/img_Placeholder\ _2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project-2-text {
+  align-self: start;
+  margin: 3em 0 0 3em;
+}
+
+.project-2 h3 {
+  font-family: 'Crete Round', sans-serif;
+  align-self: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 0.8em;
+}
+
+.project-2 p {
+  color: #fff;
+  align-self: start;
+  font-family: 'Inter', sans-serif;
+  line-height: 24px;
+  margin: 0 0 1.5em 0;
+}
+
+.skills2 {
+  align-self: start;
+  margin: 0 0 0 1.5em;
+  cursor: pointer;
+}
+
+.skills2 a {
+  color: #fff;
+  border: none;
+  background-color: #ffffff41;
+  cursor: pointer;
+}
+
+.project-2-btn {
+  background-color: #ff6b00;
+  border: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  margin: 2em 0 0 1.8em;
+  align-self: start;
+  padding: 1em;
+  width: 87.25%;
+  cursor: pointer;
+}
+
+.about-myself {
+  display: flex;
+  justify-content: center;
+  background-color: #1c1a19;
+  background-image: url(res/frame.svg);
+  background-size: 10em 20em;
+  background-repeat: no-repeat;
+  background-position: right top 20em;
+  height: 100vh;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+}
+
+.about-h1 {
+  color: #ff6b00;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 4.5rem;
+  align-self: center;
+  margin: 1em 0 0 0;
+}
+
+.about-p {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  align-self: center;
+  padding: 0 0.8em;
+  margin: 1em 0 2.5em 0;
+}
+
+.about-btn {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  background-color: #ff6b00;
+  border: none;
+  padding: 0.8em;
+  width: 50%;
+  margin: 0 0 13em 0.8em;
+  cursor: pointer;
+}
+
+.my-skills {
+  background-color: #1c1a19;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-skills h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-skills h1 img {
+  padding: 0 0.3em 0 0;
+}
+
+.my-skills ul {
+  align-self: center;
+  padding: 1rem 0 0 0;
+  text-align: center;
+}
+
+.my-skills ul li {
+  font-family: 'Inter', sans-serif;
+  list-style-type: none;
+  font-size: 1.3rem;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.skills-last-li {
+  margin: 0 0 2rem  0;
 }
