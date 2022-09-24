@@ -100,6 +100,7 @@
 }
 
 .my-recent-work h1 {
+  text-align: center;
   padding: 0 0 1.7em 0;
   margin: 0 auto 0 auto;
   align-items: center;
@@ -124,6 +125,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 0 0 0 0;
 }
 
@@ -131,7 +133,11 @@
   align-self: center;
 }
 
-.project-1 h3 {
+.project1-txt {
+  align-self: center;
+}
+
+.project-1-h3 {
   font-family: 'Crete Round', serif;
   font-size: 2rem;
   margin-top: 1.5em;
@@ -140,7 +146,7 @@
   align-self: start;
 }
 
-.project-1 p {
+.project-1-p {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   line-height: 24px;
@@ -152,60 +158,64 @@
   padding: 0 0 1em 1.5em;
 }
 
+.skills-ul li {
+  display: inline;
+}
+
+.skills-ul {
+  margin: 0 0 2.3em 0;
+}
+
 .siklls a {
   border: 1px solid #8993a4;
   padding: 0.5em;
-  margin-top: 3em;
+  margin: 3em 0 0 0;
   align-self: start;
   cursor: pointer;
 }
 
-.project1-btn {
+#project1-btn {
   background-color: #ff6b00;
   border: none;
   color: #fff;
   font-family: 'Inter', sans-serif;
-  margin: 0.3em 0 0 1.8em;
-  align-self: start;
-  padding: 1em;
+  padding: 0.75em;
   cursor: pointer;
 }
 
 .project-2 {
-  margin: 1.5rem 0 5rem 0;
   background-image: url(res/img_Placeholder\ _2.png);
+  background-size: 21.8em 25em;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 2em auto;
 }
 
-.project-2-text {
-  align-self: start;
-  margin: 3em 0 0 3em;
-}
-
-.project-2 h3 {
+.project-2-h3 {
   font-family: 'Crete Round', sans-serif;
   align-self: center;
   font-size: 2em;
   font-weight: bold;
   color: #fff;
-  margin-top: 0.8em;
+  margin: 1.5em auto 0 1rem;
+  padding: 3em 0 0 0;
 }
 
-.project-2 p {
+.project-2-p {
   color: #fff;
-  align-self: start;
   font-family: 'Inter', sans-serif;
   line-height: 24px;
-  margin: 0 0 1.5em 0;
+  margin: 0.5em auto 0 1rem;
+  padding: 0 1em 0 0;
 }
 
 .skills2 {
+  display: flex;
   align-self: start;
-  margin: 0 0 0 1.5em;
+  margin: 1.5em 0 0 -0.4em;
   cursor: pointer;
 }
 
@@ -217,15 +227,15 @@
 }
 
 .project-2-btn {
+  display: block;
   background-color: #ff6b00;
   border: none;
   color: #fff;
   font-family: 'Inter', sans-serif;
-  margin: 2em 0 0 1.8em;
-  align-self: start;
+  margin: 1em 0 0 0;
   padding: 1em;
-  width: 87.25%;
   cursor: pointer;
+  width: 100%;
 }
 
 .about-myself {
@@ -237,6 +247,10 @@
   background-repeat: no-repeat;
   background-position: right top 20em;
   height: 100vh;
+}
+
+.about-myself hr {
+  margin: 1em 0 0 3em;
 }
 
 .aboutme {
@@ -259,7 +273,7 @@
   font-size: 1rem;
   line-height: 24px;
   align-self: center;
-  padding: 0 0.8em;
+  padding: 0 0 0 0.8em;
   margin: 1em 0 2.5em 0;
 }
 
@@ -270,7 +284,7 @@
   background-color: #ff6b00;
   border: none;
   padding: 0.8em;
-  width: 50%;
+  width: 10em;
   margin: 0 0 13em 0.8em;
   cursor: pointer;
 }
@@ -282,6 +296,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 7.5em 0 0 0;
 }
 
 .my-skills h1 {
