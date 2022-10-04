@@ -213,10 +213,13 @@
 }
 
 .skills2 {
-  display: flex;
+  /* display: flex;
   align-self: start;
   margin: 1.5em 0 0 -0.4em;
-  cursor: pointer;
+  cursor: pointer; */
+  display: float;
+  float: left;
+  margin: 1.5em 0 0 -0.4em;
 }
 
 .skills2 a {
