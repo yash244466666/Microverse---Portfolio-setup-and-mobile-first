@@ -194,6 +194,12 @@
   cursor: pointer;
 }
 
+#project1-btn:hover {
+  background-color: #fff;
+  color: #ff6b00;
+  border: 2px solid #ff6b00;
+}
+
 .project-2 {
   background-image: url(res/img_Placeholder\ _2.png);
   background-size: 21.8em 25em;
@@ -251,6 +257,16 @@
   padding: 1em;
   cursor: pointer;
   width: 100%;
+}
+
+.p2btn2 {
+  display: none;
+}
+
+.project-2-btn:hover {
+  background-color: #fff;
+  color: #ff6b00;
+  border: 2px solid #ff6b00;
 }
 
 .about-myself {

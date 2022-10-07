@@ -97,7 +97,8 @@
 
   .works {
     display: grid;
-    grid-gap: 0 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0 0.5em;
     grid-template-areas:
       "project-1 project-1 project-1"
       "project-2 project-3 project-4"
@@ -123,21 +124,54 @@
     padding: 0 0 4.5em 1.5em;
   }
 
+  /* .project-2 {
+    background-image: url(res/img_Placeholder\ _2.png);
+    background-size: 21.8em 25em;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2em auto;
+  } */
+
   .p2 {
     grid-area: project-2;
     background-image: url(res/desktop-printing-bg.png);
+    display: grid;
+    grid-template-areas:
+      'header'
+      'para'
+      'skill'
+      'see-project';
+
+    /* flex-direction: column; */
+
+    /* justify-content: space-between; */
+
+    /* justify-content: center; */
+
+    /* margin: -2em 0 0 0; */
+
+    /* border: 2px solid #000; */
   }
 
   .skills2 {
-    margin: 0;
+    margin: 1.5em 0 1em -0.5em;
   }
 
   .p2h {
+    grid-area: header;
     opacity: 0;
+    color: black;
+
+    /* display: none; */
   }
 
   .p2p {
+    grid-area: para;
     opacity: 0;
+    color: black;
 
     /* display: none; */
   }
@@ -148,12 +182,33 @@
   }
 
   .p2btn {
-    margin: -5.35em 0 0 0;
+    grid-area: see-project;
+    justify-content: start;
+
+    /* position: absolute; */
+
+    /* position: relative; */
+    display: none;
+
+    /* margin: 0 0 14.5em 0 ; */
+
+    /* width: 20em ; */
+
+    /* margin: 0 0 0 0; */
+  }
+
+  .p2btn2 {
+    display: block;
+    float: right;
+    width: 110%;
+    margin: 0 0 1.5em -1.25em;
   }
 
   .p3 {
     grid-area: project-3;
     background-image: url(res/desktop-data-dashbord-bg.png);
+
+    /* border: 2px solid #000; */
   }
 
   .p3btn {
@@ -366,8 +421,8 @@
     padding-bottom: 1em;
   }
 
-  .p2btn {
-    margin: -3em 0 0 0;
+  .p2btn2 {
+    margin: 0 0 -3.35em -1.25em;
   }
 
   /* .aboutme {
@@ -381,6 +436,15 @@
   /* .contact-social {
     bottom: -420vh;
   } */
+}
+
+@media only screen and (min-width: 1024px) {
+  /* .p2btn {
+    margin: -1em 0 0 0;
+  } */
+  .p2btn2 {
+    margin: 2em 0 -5em -1.25em;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -455,9 +519,9 @@
     margin-right: 9em;
   }
 
-  .p2btn {
+  /* .p2btn {
     margin: -2em 0 0 0;
-  }
+  } */
 
   .about-p {
     width: 35em;
@@ -468,22 +532,16 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  .p2btn {
-    margin: -1em 0 0 0;
-  }
-}
-
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   @media only screen and (min-width: 1024px) {
     .p2btn {
       margin: -1em 0 0 0;
     }
   }
 
-  /* @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1440px) {
     .p2btn {
         margin: -1em 0 0 0;
       }
-  } */
-}
+  }
+} */
