@@ -358,13 +358,11 @@
 
   .contact-form {
     grid-area: form;
-    width: 28em;
-
-    /* margin-right: 3em; */
+    width: 100%;
   }
 
   .contact-btn {
-    width: 40%;
+    width: 60%;
     margin: 0;
     padding: 1em -2em;
   }
