@@ -42,6 +42,12 @@
   font-family: 'Inter', sans-serif;
 }
 
+.logo-txt:hover {
+  transform: rotate(360deg);
+  transition-duration: 3s;
+  color: #36b37e;
+}
+
 .ham-manu {
   cursor: pointer;
 }
