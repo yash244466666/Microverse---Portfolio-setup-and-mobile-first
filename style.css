@@ -11,13 +11,23 @@
   list-style-type: none;
 }
 
+.hide {
+  display: none;
+}
+
 .nav-bar {
+  position: fixed;
+  z-index: 100;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #3c3a39;
   width: 100%;
+}
+
+.nav-menu {
+  display: none;
 }
 
 .logo {
@@ -29,6 +39,7 @@
 
 .logo-txt {
   color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
 .ham-manu {
@@ -213,13 +224,14 @@
 }
 
 .skills2 {
-  /* display: flex;
+  display: flex;
   align-self: start;
   margin: 1.5em 0 0 -0.4em;
-  cursor: pointer; */
-  display: float;
+  cursor: pointer;
+
+  /* display: float;
   float: left;
-  margin: 1.5em 0 0 -0.4em;
+  margin: 1.5em 0 0 -0.4em; */
 }
 
 .skills2 a {
@@ -249,7 +261,8 @@
   background-size: 10em 20em;
   background-repeat: no-repeat;
   background-position: right top 20em;
-  height: 100vh;
+
+  /* height: 100vh; */
 }
 
 .about-myself hr {
@@ -278,6 +291,7 @@
   align-self: center;
   padding: 0 0 0 0.8em;
   margin: 1em 0 2.5em 0;
+  width: 20em;
 }
 
 .about-btn {
@@ -303,11 +317,7 @@
 }
 
 .my-skills h1 {
-  font-family: 'Inter', sans-serif;
-  font-size: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 .my-skills h1 img {
