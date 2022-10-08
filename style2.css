@@ -1,3 +1,105 @@
+@-webkit-keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .ham-manu {
     display: none;
@@ -43,6 +145,8 @@
 
   .hero-main-header h1 {
     font-size: 3.5rem;
+    -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   }
 
   .hero-sm-header {
@@ -52,6 +156,8 @@
 
   .hero-sm-header h3 {
     font-weight: 500;
+    -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   }
 
   .hero-text {
@@ -62,12 +168,16 @@
 
   .hero-text p {
     font-weight: regular;
+    -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1.5) both;
   }
 
   .social-media-sec {
     display: inline-block;
     position: relative;
     bottom: 14em;
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
   }
 
   .social-ico {
@@ -120,20 +230,14 @@
     grid-area: project-1-img;
   }
 
+  #project1-btn {
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+  }
+
   .siklls {
     padding: 0 0 4.5em 1.5em;
   }
-
-  /* .project-2 {
-    background-image: url(res/img_Placeholder\ _2.png);
-    background-size: 21.8em 25em;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 2em auto;
-  } */
 
   .p2 {
     grid-area: project-2;
@@ -144,16 +248,6 @@
       'para'
       'skill'
       'see-project';
-
-    /* flex-direction: column; */
-
-    /* justify-content: space-between; */
-
-    /* justify-content: center; */
-
-    /* margin: -2em 0 0 0; */
-
-    /* border: 2px solid #000; */
   }
 
   .skills2 {
@@ -164,37 +258,22 @@
     grid-area: header;
     opacity: 0;
     color: black;
-
-    /* display: none; */
   }
 
   .p2p {
     grid-area: para;
     opacity: 0;
     color: black;
-
-    /* display: none; */
   }
 
   .p2ul {
-    /* opacity: 0; */
     display: none;
   }
 
   .p2btn {
     grid-area: see-project;
     justify-content: start;
-
-    /* position: absolute; */
-
-    /* position: relative; */
     display: none;
-
-    /* margin: 0 0 14.5em 0 ; */
-
-    /* width: 20em ; */
-
-    /* margin: 0 0 0 0; */
   }
 
   .p2btn2 {
@@ -207,8 +286,6 @@
   .p3 {
     grid-area: project-3;
     background-image: url(res/desktop-data-dashbord-bg.png);
-
-    /* border: 2px solid #000; */
   }
 
   .p3btn {
@@ -255,8 +332,6 @@
   .about-myself {
     background-color: #262626;
     background-image: url(res/desktop-Frame.svg);
-
-    /* background-size: auto; */
     background-position: right top 40%;
     background-size: 50%;
     justify-content: flex-start;
@@ -293,6 +368,8 @@
     width: 10em;
     margin: 0 0 13em 0.8em;
     cursor: pointer;
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
   }
 
   /* -------------------------------------------------------------------------------------------------------------------- */
@@ -365,6 +442,8 @@
     width: 60%;
     margin: 0;
     padding: 1em -2em;
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
   }
 
   .contact-social {
@@ -423,23 +502,12 @@
     margin: 0 0 -3.35em -1.25em;
   }
 
-  /* .aboutme {
-    margin:  0 0 0 6em;
-  } */
-
   .about-p {
     width: 25em;
   }
-
-  /* .contact-social {
-    bottom: -420vh;
-  } */
 }
 
 @media only screen and (min-width: 1024px) {
-  /* .p2btn {
-    margin: -1em 0 0 0;
-  } */
   .p2btn2 {
     margin: 2em 0 -5em -1.25em;
   }
@@ -517,10 +585,6 @@
     margin-right: 9em;
   }
 
-  /* .p2btn {
-    margin: -2em 0 0 0;
-  } */
-
   .about-p {
     width: 35em;
   }
@@ -529,17 +593,3 @@
     bottom: -380vh;
   }
 }
-
-/* @-moz-document url-prefix() {
-  @media only screen and (min-width: 1024px) {
-    .p2btn {
-      margin: -1em 0 0 0;
-    }
-  }
-
-  @media only screen and (min-width: 1440px) {
-    .p2btn {
-        margin: -1em 0 0 0;
-      }
-  }
-} */
