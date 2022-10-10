@@ -9,7 +9,6 @@ Microverse Day 3 project.
 # Online version of the project.
 https://yash244466666.github.io/Microverse---Portfolio-setup-and-mobile-first/
 
-
 ## Built With
 
 - HTML
