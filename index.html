@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Microverse Project of Yash and Tayyab">
     <link rel="stylesheet" href="style.css">
     <title>Microverse</title>
     <link rel="stylesheet" href="style2.css"> <!-- This is the desktop version of Microverse. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"/>
     <title>Microverse</title> 
 </head>
     <body>
         <header>
             <nav class="nav-bar">
                 <div class="logo"><a class="logo-txt" href="#">Yash Solo</a></div>
-                <div class="ham-manu"><img src="res/ham-manu.svg" alt="ham-menu"></div>
-                <div class="nav-menu">
-                    <a href="#" class="portfolio-nav-menu nav-menu-item">Portfolio</a>
-                    <a href="#" class="about-nav-menu nav-menu-item">About</a>
-                    <a href="#" class="contact-nav-menu nav-menu-item">Contact</a>
-                    <a href="#" class="msg-nav-menu nav-menu-item"><img src="res/Desktop-nav-msg.svg" alt="Msg Icon"></a>
+                <div class="ham-manu" onclick="hamMenuShow()"><img src="res/ham-manu.svg" alt="ham-menu"></div>
+                <div id="navmenu" class="nav-menu hidden">
+                    <div class="nav-links">
+                        <div id="portfolio-nav-x" class="portfolio-nav-x" onclick="hamMenuHide()"><i class="fa-sharp fa-solid fa-x portfolio-nav-x-i"></i></div>
+                        <a href="./index.html" class="portfolio-nav-menu nav-menu-item">Portfolio</a>
+                        <a href="./index.html" class="about-nav-menu nav-menu-item">About</a>
+                        <a href="./index.html" class="contact-nav-menu nav-menu-item">Contact</a>
+                        <a class="hidden" href="./index.html" class="msg-nav-menu nav-menu-item"><img src="res/Desktop-nav-msg.svg" alt="Msg Icon"></a>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -29,11 +34,11 @@
             <div class="hero-text"><p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                 don’t hestiate to contact me.</p></div>
             <ul class="social-media-sec">
-                <li><a href="#"><img class="social-ico" src="res/git.svg" alt="git" alt="Social Icon"></a></li>
-                <li><a href="#"><img class="social-ico" src="res/linkedin.svg" alt="linkedin" alt="Social Icon"></a></li>
-                <li><a href="#"><img class="social-ico" src="res/vic.svg" alt="victory" alt="Social Icon"></a></li>
-                <li><a href="#"><img class="social-ico" src="res/twitter.svg" alt="twitter" alt="Social Icon"></a></li>
-                <li><a href="#"><img class="social-ico" src="res/m.svg" alt="meta" alt="Social Icon"></a></li>
+                <li><a href="/index.html"><img class="social-ico" src="res/git.svg" alt="git" alt="Social Icon"></a></li>
+                <li><a href="/index.html"><img class="social-ico" src="res/linkedin.svg" alt="linkedin" alt="Social Icon"></a></li>
+                <li><a href="/index.html"><img class="social-ico" src="res/vic.svg" alt="victory" alt="Social Icon"></a></li>
+                <li><a href="/index.html"><img class="social-ico" src="res/twitter.svg" alt="twitter" alt="Social Icon"></a></li>
+                <li><a href="/index.html"><img class="social-ico" src="res/m.svg" alt="meta" alt="Social Icon"></a></li>
             </ul>
         </section>
         <section class="works-section">
@@ -50,10 +55,10 @@
                     </div>
                     <div class="siklls">
                         <ul class="skills-ul">
-                            <li><a href="#">css</a></li>
-                            <li><a a href="#">html</a></li>
-                            <li><a a href="#">bootstrap</a></li>
-                            <li><a a href="#">Ruby</a></li>
+                            <li><a href="/index.html">css</a></li>
+                            <li><a a href="/index.html">html</a></li>
+                            <li><a a href="/index.html">bootstrap</a></li>
+                            <li><a a href="/index.html">Ruby</a></li>
                         </ul>
                         <a id="project1-btn">See Project</a>
                     </div>
@@ -63,9 +68,9 @@
                         <p class="project-2-p p2p">A daily selection of privately </br> personalized reads; no accounts or </br> sign-ups required. has been the </br> industry's standard</p>
                     <div class="siklls skills2">
                         <ul class="skills-ul p2ul">
-                            <li><a a href="#">html</a></li>
-                            <li><a a href="#">bootstrap</a></li>
-                            <li><a a href="#">Ruby</a></li>
+                            <li><a a href="/index.html">html</a></li>
+                            <li><a a href="/index.html">bootstrap</a></li>
+                            <li><a a href="/index.html">Ruby</a></li>
                         </ul>
                         <button class="project-2-btn p2btn2">See Project</button>
                     </div>
@@ -76,9 +81,9 @@
                         <p class="project-2-p">A daily selection of privately </br> personalized reads; no accounts or </br> sign-ups required. has been the </br> industry's standard</p>
                     <div class="siklls skills2">
                         <ul class="skills-ul">
-                            <li><a a href="#">html</a></li>
-                            <li><a a href="#">bootstrap</a></li>
-                            <li><a a href="#">Ruby</a></li>
+                            <li><a a href="/index.html">html</a></li>
+                            <li><a a href="/index.html">bootstrap</a></li>
+                            <li><a a href="/index.html">Ruby</a></li>
                         </ul>
                     </div>
                     <button class="project-2-btn p3btn">See Project</button>
@@ -88,9 +93,9 @@
                         <p class="project-2-p">A daily selection of privately </br> personalized reads; no accounts or </br> sign-ups required. has been the </br> industry's standard</p>
                     <div class="siklls skills2">
                         <ul class="skills-ul">
-                            <li><a a href="#">html</a></li>
-                            <li><a a href="#">bootstrap</a></li>
-                            <li><a a href="#">Ruby</a></li>
+                            <li><a a href="/index.html">html</a></li>
+                            <li><a a href="/index.html">bootstrap</a></li>
+                            <li><a a href="/index.html">Ruby</a></li>
                         </ul>
                     </div>
                     <button class="project-2-btn p4btn">See Project</button>
@@ -100,9 +105,9 @@
                         <p class="project-2-p">A daily selection of privately </br> personalized reads; no accounts or </br> sign-ups required. has been the </br> industry's standard</p>
                     <div class="siklls skills2">
                         <ul class="skills-ul">
-                            <li><a a href="#">html</a></li>
-                            <li><a a href="#">bootstrap</a></li>
-                            <li><a a href="#">Ruby</a></li>
+                            <li><a a href="/index.html">html</a></li>
+                            <li><a a href="/index.html">bootstrap</a></li>
+                            <li><a a href="/index.html">Ruby</a></li>
                         </ul>
                     </div>
                     <button class="project-2-btn p5btn">See Project</button>
@@ -112,9 +117,9 @@
                         <p class="project-2-p">A daily selection of privately </br> personalized reads; no accounts or </br> sign-ups required. has been the </br> industry's standard</p>
                     <div class="siklls skills2">
                         <ul class="skills-ul">
-                            <li><a a href="#">html</a></li>
-                            <li><a a href="#">bootstrap</a></li>
-                            <li><a a href="#">Ruby</a></li>
+                            <li><a a href="/index.html">html</a></li>
+                            <li><a a href="/index.html">bootstrap</a></li>
+                            <li><a a href="/index.html">Ruby</a></li>
                         </ul>
                     </div>
                     <button class="project-2-btn p6btn">See Project</button>
@@ -124,9 +129,9 @@
                         <p class="project-2-p">A daily selection of privately </br> personalized reads; no accounts or </br> sign-ups required. has been the </br> industry's standard</p>
                     <div class="siklls skills2">
                         <ul class="skills-ul">
-                            <li><a a href="#">html</a></li>
-                            <li><a a href="#">bootstrap</a></li>
-                            <li><a a href="#">Ruby</a></li>
+                            <li><a a href="/index.html">html</a></li>
+                            <li><a a href="/index.html">bootstrap</a></li>
+                            <li><a a href="/index.html">Ruby</a></li>
                         </ul>
                     </div>
                     <button class="project-2-btn p7btn">See Project</button>
@@ -188,21 +193,24 @@
                     <a href="#">
                         <img class="btm-social" src="res/btm-git.svg" alt="Bottom-Social-Media-GIT">
                     </a>
-                    <a href="#">
+                    <a href="/index.html">
                         <img class="btm-social" src="res/btm-in.svg" alt="Bottom-Social-Media-LinkIn">
                     </a>
-                    <a href="#">
+                    <a href="/index.html">
                         <img class="btm-social" src="res/btm-v.svg" alt="Bottom-Social-Media">  
                     </a>
-                    <a href="#">
+                    <a href="/index.html">
                         <img class="btm-social" src="res/btm-twitter.svg" alt="Bottom-Social-Media-twitter">
                     </a>
-                    <a href="#">
+                    <a href="/index.html">
                         <img class="btm-social" src="res/btm-m.svg" alt="Bottom-Social-Media">
                     </a>
                 </div>
                 <hr class="contact-social-bottom-hr">
             </div>
         </section>
+
+        <script type="text/javascript" src="./app.js"></script>
+        <script src="https://kit.fontawesome.com/4ea6e3ab0b.js" crossorigin="anonymous"></script>
     </body>
 </html>
