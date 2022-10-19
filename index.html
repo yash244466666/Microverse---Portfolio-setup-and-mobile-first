@@ -15,14 +15,14 @@
         <header>
             <nav class="nav-bar">
                 <div class="logo"><a class="logo-txt" href="#">Yash Solo</a></div>
-                <div class="ham-manu" onclick="hamMenuShow()"><img src="res/ham-manu.svg" alt="ham-menu"></div>
+                <div id="ham" class="ham-manu" onclick="ham"><img src="res/ham-manu.svg" alt="ham-menu"></div>
                 <div id="navmenu" class="nav-menu hidden">
                     <div class="nav-links">
-                        <div id="portfolio-nav-x" class="portfolio-nav-x" onclick="hamMenuHide()"><i class="fa-sharp fa-solid fa-x portfolio-nav-x-i"></i></div>
-                        <a href="#work-sec" class="portfolio-nav-menu nav-menu-item">Portfolio</a>
-                        <a href="#about-me" class="about-nav-menu nav-menu-item">About</a>
-                        <a href="#contact" class="contact-nav-menu nav-menu-item">Contact</a>
-                        <a href="#contact" class="msg-nav-menu nav-menu-item hidden"><img src="res/Desktop-nav-msg.svg" alt="Msg Icon"></a>
+                        <div id="portfolio-nav-x" class="portfolio-nav-x" onclick="hamX"><i class="fa-sharp fa-solid fa-x portfolio-nav-x-i"></i></div>
+                        <a href="#work-sec" class="portfolio-nav-menu nav-menu-item" onclick="hamMenuHide()">Portfolio</a>
+                        <a href="#about-me" class="about-nav-menu nav-menu-item" onclick="hamMenuHide()">About</a>
+                        <a href="#contact" class="contact-nav-menu nav-menu-item" onclick="hamMenuHide()">Contact</a>
+                        <a href="#contact" class="msg-nav-menu nav-menu-item hidden" onclick="hamMenuHide()"><img src="res/Desktop-nav-msg.svg" alt="Msg Icon"></a>
                     </div>
                 </div>
             </nav>
@@ -210,6 +210,13 @@
             </div>
         </section>
 
+        <script>
+                        function hamMenuHide() {
+                var hamMenu = document.getElementById('navmenu');
+                hamMenu.classList.add('hidden');
+            }
+
+        </script>
         <script type="text/javascript" src="./app.js"></script>
         <script src="https://kit.fontawesome.com/4ea6e3ab0b.js" crossorigin="anonymous"></script>
     </body>

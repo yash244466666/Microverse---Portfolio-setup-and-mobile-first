@@ -1,18 +1,19 @@
-const hamMenu = document.getElementById('navmenu');
+const navMenu = document.getElementById('navmenu');
 
-/* I've to linter out those functions because,
-otherwise they would
-give the, "no-unused-vars" linter error message.
-I've searched for the solution online,
-and then this is the solution I found. */
+const ham = document.getElementById('ham');
+ham.addEventListener('click', (e) => {
+  e.preventDefault();
+  navMenu.classList.toggle('hidden');
+});
 
-/* eslint-disable */
-function hamMenuShow() {
-  hamMenu.classList.remove('hidden');
-}
+const hamX = document.getElementById('portfolio-nav-x');
+hamX.addEventListener('click', (e) => {
+  e.preventDefault();
+  navMenu.classList.toggle('hidden');
+});
 
-/* eslint-disable */
-function hamMenuHide() {
-  hamMenu.classList.add('hidden');
-}
-
+const navA = document.querySelectorAll('nav-menu-item');
+navA.addEventListener('click', (e) => {
+  e.preventDefault();
+  navMenu.classList.add('hidden');
+});
