@@ -101,27 +101,68 @@
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .ham-manu {
     display: none;
   }
 
   .nav-bar {
     height: 4.5em;
+
+    /* position: relative; */
+  }
+
+  #portfolio-nav-x {
+    display: none;
   }
 
   .nav-menu {
-    display: flex;
+    display: flex !important;
+    flex-direction: row;
+    position: relative;
     justify-content: center;
     align-items: center;
+    width: 80vw;
+    height: 2vh;
   }
 
-  .nav-menu-item {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    margin: 0.5rem -35vw -1vh 0;
+  }
+
+  .hidden {
+    display: flex !important;
+    flex-direction: row;
+  }
+
+  .nav-menu a {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.93rem;
+    font-weight: 600;
+    margin: 0 0 0 0;
+    padding-left: 1rem;
+  }
+
+  /* .nav-menu a img {
+    display: inline;
+
+  } */
+
+  /* .nav-menu-item {
     margin: 0 2.62em 0 0;
     color: white;
     font-family: 'Inter', sans-serif;
     font-size: 0.93rem;
     font-weight: 600;
-  }
+  } */
 
   .logo {
     margin: 0 0 0 2.5em;
@@ -511,9 +552,17 @@
   .p2btn2 {
     margin: 2em 0 -5em -1.25em;
   }
+
+  .nav-links {
+    margin: 0.5rem -45vw -1vh 0;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
+  .nav-links {
+    margin: 0.5rem -50vw -1vh 0;
+  }
+
   .logo {
     margin: 0 0 0 5em;
   }
@@ -577,6 +626,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .nav-links {
+    margin: 0.5rem -55vw -1vh 0;
+  }
+
   .logo {
     margin: 0 0 0 8em;
   }
