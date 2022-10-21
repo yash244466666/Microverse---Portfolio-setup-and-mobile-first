@@ -1,0 +1,174 @@
+.pop-hidden {
+  display: none !important;
+}
+
+.pop-sec {
+  position: fixed;
+  margin-top: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-bg {
+  position: absolute;
+  z-index: -100;
+  height: 100vh !important;
+  width: 100% !important;
+  background-color: #0006;
+}
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  width: 80vw;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.popup-main-content {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    'popimg poptxt'
+    'popimg popbtn';
+}
+
+.popup-img {
+  grid-area: popimg;
+  display: flex;
+  justify-content: center;
+}
+
+.popup-img img {
+  width: 100%;
+}
+
+.popup-header {
+  display: grid;
+  grid-template-columns: 15fr 1fr;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.popup-header h1 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #172b4d;
+}
+
+.popup-header i {
+  color: #67798e;
+}
+
+.popup-skill-btn {
+  display: flex;
+}
+
+.popup-skill-btn button {
+  padding: 0.6rem 0.5rem;
+  font-family: 'poppins', sans-serif;
+  border: 2px solid #979493;
+  background-color: #172b4d00;
+  margin: 2rem 0 1rem 0.5rem;
+  color: #3c3a39;
+}
+
+.popup-text p {
+  grid-area: poptxt;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 1rem;
+}
+
+.popup-content-btn-div {
+  grid-area: popbtn;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-areas: 'btn1 btn2';
+}
+
+.popup-content-btn1 {
+  grid-area: 'btn1';
+  display: flex;
+  padding: 12px;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  margin-right: 1rem;
+  gap: 12px;
+  align-items: flex-start;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.popup-content-btn2 {
+  grid-area: 'btn2';
+  display: flex;
+  padding: 12px;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .popup-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .popup-text p {
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0.5rem 0 -1.5rem 0;
+  }
+
+  .popup-img {
+    margin-bottom: -1rem;
+  }
+
+  .popup-skill-btn button {
+    padding: 0.3rem 0.4rem;
+    font-size: 10px;
+    margin: 2rem 0 1rem 0.5rem;
+    color: #3c3a39;
+  }
+
+  .popup-header {
+    margin: 3rem 0 -1rem 0;
+  }
+
+  .popup-header h1 {
+    font-size: 1rem;
+  }
+
+  .popup-content-btn1 {
+    font-size: 10px;
+  }
+
+  .popup-content-btn2 {
+    font-size: 10px;
+  }
+}
