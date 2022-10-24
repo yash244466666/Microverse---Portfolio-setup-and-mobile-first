@@ -29,10 +29,11 @@
 /* NAV Links */
 
 .hidden {
-  /* display: none !important; */
-  opacity: 0 !important;
+  display: none !important;
+
+  /* opacity: 0 !important;
   height: 0 !important;
-  pointer-events: none !important;
+  pointer-events: none !important; */
 }
 
 .nav-menu {
