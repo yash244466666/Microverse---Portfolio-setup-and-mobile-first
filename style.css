@@ -30,6 +30,10 @@
 
 .hidden {
   display: none !important;
+
+  /* opacity: 0 !important;
+  height: 0 !important;
+  pointer-events: none !important; */
 }
 
 .nav-menu {
@@ -41,6 +45,7 @@
   justify-content: center;
   background-color: #3c3a39;
   padding: 0 0 0 1em;
+  transition: all 0.5s ease-out;
 }
 
 .nav-links {
