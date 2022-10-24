@@ -4,7 +4,8 @@
 
 .pop-sec {
   position: fixed;
-  margin-top: 1rem;
+  z-index: 1000000;
+  margin-top: 0rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -19,6 +20,7 @@
 }
 
 .popup {
+
   width: 100vw;
   height: 100vh;
 }
