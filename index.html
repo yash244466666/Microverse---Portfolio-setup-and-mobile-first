@@ -93,11 +93,12 @@
             <div class="contact-header-text">
                 <h3 class="contact-header">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
             </div>
-            <form action="https://formspree.io/f/maykjlep" class="contact-form" method="post">
+            <form id="form" action="https://formspree.io/f/maykjlep" class="contact-form" method="post">
                 <input type="text" maxlength="30" class="contact-name" placeholder="Full name" name="contactname" required>
-                <input type="email" class="contact-email" placeholder="Email address" name="contacemail" required>
+                <input id="email" type="email" class="contact-email" placeholder="Email address" name="contacemail" required>
                 <textarea class="contact-text" name="contacttxt" maxlength="500" placeholder="Enter text here" required></textarea>
-                <button type="submit" class="contact-btn">Get in touch</button>
+                <small class="errorMsg"></small>
+                <button type="submit" class="contact-btn" onclick="submitForm(event)">Get in touch</button>
             </form>
             <div class="contact-social">
                 <hr class="contact-social-top-hr">
@@ -130,6 +131,7 @@
         <script type="text/javascript" src="./ham-app.js"></script>
         <script type="text/javascript" src="./work-cards.js"></script>
         <script type="text/javascript" src="./popup-app.js"></script>
+        <script type="text/javascript" src="./validation-app.js"></script>
         <script src="https://kit.fontawesome.com/4ea6e3ab0b.js" crossorigin="anonymous"></script>
     </body>
 </html>
