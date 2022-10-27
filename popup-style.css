@@ -61,7 +61,8 @@
 }
 
 .popup-header h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 900;
   font-family: 'Roboto', sans-serif;
   color: #172b4d;
 }
@@ -72,6 +73,7 @@
 
 .popup-skill-btn {
   display: flex;
+  margin: -1.2rem 0 0 -0.5rem;
 }
 
 .popup-skill-btn button {
@@ -104,7 +106,7 @@
 .popup-content-btn1 {
   grid-area: 'btn1';
   display: flex;
-  padding: 12px;
+  padding: 8px 12px;
   background: #ff6b00;
   color: #fff;
   border: none;
@@ -121,7 +123,7 @@
 .popup-content-btn2 {
   grid-area: 'btn2';
   display: flex;
-  padding: 12px;
+  padding: 8px 12px;
   background: #ff6b00;
   color: #fff;
   border: none;
