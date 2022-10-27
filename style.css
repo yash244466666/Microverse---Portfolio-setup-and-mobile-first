@@ -483,3 +483,8 @@
   width: 134px;
   margin: 0 auto 0.5em auto;
 }
+
+.errorMsg {
+  color: rgb(184, 41, 41);
+  padding: 1rem;
+}
